@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>藏语列表</title>
+    <meta name="keywords" content="CSS3表格,table" />
+    <meta name="description" content="" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font: 18px/1.4 "Microsoft Yahei", "Microsoft Himalaya", Tahoma, Georgia, Serif;
+        }
+
+        #page-wrap {
+            margin: 10px;
+        }
+
+        p {
+            margin: 20px 0;
+        }
+
+        /* 
+            Generic Styling, for Desktops/Laptops 
+            */
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #fff
+        }
+
+        /* Zebra striping */
+
+        tr:nth-of-type(odd) {
+            /* background: #ccc; */
+            background-color: #fff;
+        }
+
+
+        tr {
+            font-weight: bold;
+            background-color: #0499cc;
+        }
+
+        th {
+            padding: 6px;
+            border: 1px solid #fff;
+            text-align: center;
+        }
+
+        @media only screen and (max-width: 760px),
+        (min-device-width: 768px) and (max-device-width: 1024px) {
+
+            /* Force table to not be like tables anymore */
+            table,
+            tbody,
+            th,
+            td,
+            tr {
+                display: block;
+            }
+
+
+
+            tr {
+                border: 1px solid #ccc;
+            }
+
+            td {
+                /* Behave  like a "row" */
+                border: none;
+                border-bottom: 1px solid #eee;
+                position: relative;
+                padding-left: 50%;
+            }
+
+            td:before {
+                /* Now like a table header */
+                position: absolute;
+                /* Top/left values mimic padding */
+                top: 6px;
+                left: 6px;
+                width: 45%;
+                padding-right: 10px;
+                white-space: nowrap;
+            }
+
+
+        }
+
+        /* Smartphones (portrait and landscape) ----------- */
+
+        @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+            body {
+                padding: 0;
+                margin: 0;
+            }
+        }
+
+        /* iPads (portrait and landscape) ----------- */
+
+        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+            body {
+                width: 100%;
+            }
+        }
+
+        #teshu {
+            margin: 0 auto;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .laba {
+            height: 20px;
+            border-radius: 10%;
+            border: 1px solid pink;
+            cursor: pointer;
+
+        }
+
+        .show {
+            display: none;
+        }
+    </style>
+    <!--<![endif]-->
+</head>
+
+<body>
+    <script type="text/javascript" src="{$smarty.const.JS_URL}jquery-1.11.3.min.js"></script>
+    <script type="text/javascript">
+
+        function zhanshi(sw) {
+            $("." + sw).slideToggle();
+            console.log(sw);
+
+        }
+    </script>
+    <div id="page-wrap" style="margin:50px 0 0">
+        <!-- 数据列表展示代码 -->
+        <table>
+
+            <tbody>
+                {foreach $data as $k=>$v}
+                <tr>
+                    <th>
+                        <div id="teshu">{$v.ci}</div>
+                    </th>
+                    <th>
+                        <div onclick="zhanshi('sw{$k}')" class="laba" style="background-color: #09ff33;">点击查看</div>
+                    </th>
+                </tr>
+
+                <tr class="show sw{$k}">
+
+                    <td style=" background: #fff; color:#0499cc; font-size: 100px; font-weight:900;" rowspan="21" align="center" valign="middle">{$v.ci}</td>
+
+                </tr>
+
+                <tr class="show sw{$k}">
+
+                    <td>{$v.bjdaima}</td>
+                </tr>
+
+                <tr class="show sw{$k}">
+                    <td>{$v.jwbujw}</td>
+                </tr>
+
+                <tr class="show sw{$k}">
+                    <td>{$v.dcgoucheng}</td>
+                </tr>
+
+
+
+                <tr class="show sw{$k}">
+                    <td>{$v.zzbzz}</td>
+                </tr>
+
+                <tr class="show sw{$k}">
+                    <td>{$v.dcxingtai}</td>
+                </tr>
+
+
+                <tr class="show sw{$k}">
+                    <td>{$v.zhymc}</td>
+                </tr>
+
+                <tr class="show sw{$k}">
+                    <td>{$v.zzymc}</td>
+                </tr>
+
+
+                <tr class="show sw{$k}">
+                    <td>{$v.zbjdaima}</td>
+                </tr>
+
+                <tr class="show sw{$k}">
+                    <td>{$v.zdci}</td>
+                </tr>
+
+
+                <tr class="show sw{$k}">
+                    <td>{$v.cbjdaima}</td>
+                </tr>
+
+                <tr class="show sw{$k}">
+                    <td>{$v.czdc}</td>
+                </tr>
+
+                <tr class="show sw{$k}">
+                    <td>{$v.ciyi1}</td>
+                </tr>
+
+                <tr class="show sw{$k}">
+                    <td>{$v.liju1}</td>
+                </tr>
+
+                <tr class="show sw{$k}">
+                    <td>{$v.ciyi2}</td>
+                </tr>
+
+                <tr class="show sw{$k}">
+                    <td>{$v.liju2}</td>
+                </tr>
+
+                <tr class="show sw{$k}">
+                    <td>{$v.ciyi3}</td>
+                </tr>
+
+                <tr class="show sw{$k}">
+                    <td>{$v.liju3}</td>
+                </tr>
+
+                <tr class="show sw{$k}">
+                    <td>{$v.gqs}</td>
+                </tr>
+
+                <tr class="show sw{$k}">
+                    <td>{$v.xls}</td>
+                </tr>
+
+                <tr class="show sw{$k}">
+                    <td>{$v.jls}</td>
+                </tr>
+
+
+
+                {/foreach}
+            </tbody>
+        </table>
+        <!-- 结束数据展示代码 -->
+
+
+    </div>
+
+
+
+    <!-- 以下是统计及其他信息，与演示无关，不必理会 -->
+
+    <p class="vad">
+        <a href="#" target="_blank">藏语动词</a>
+        <a href="#" target="_blank">查 找</a>
+        <a href="{$smarty.const.__MODULE__}/ci/showlist" target="_blank">词库管理</a>
+    </p>
+    <style>
+        .vad {
+            margin: 250px 0 5px;
+            font-family: Consolas, arial, 宋体, sans-serif;
+            text-align: center;
+        }
+
+        .vad a {
+            display: inline-block;
+            height: 36px;
+            line-height: 36px;
+            margin: 0 5px;
+            padding: 0 50px;
+            font-size: 14px;
+            text-align: center;
+            color: #eee;
+            text-decoration: none;
+            background-color: #222;
+        }
+
+        .vad a:hover {
+            color: #fff;
+            background-color: #000;
+        }
+
+        .thead {
+            width: 728px;
+            height: 90px;
+            margin: 0 auto;
+            border-bottom: 40px solid #fff;
+        }
+    </style>
+    <script type="text/javascript">
+        /*120*270 创建于 2018-05-01*/
+        var cpro_id = "u2182159";
+    </script>

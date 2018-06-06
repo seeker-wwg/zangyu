@@ -1,0 +1,29 @@
+[ 2018-05-14T23:28:16+08:00 ] 127.0.0.1 /zydongci/index.php/home/Ci/showlist
+ERR: 无法加载控制器:Ci
+
+[ 2018-05-14T23:28:24+08:00 ] 127.0.0.1 /zydongci/index.php/home/ci/showlist
+ERR: 无法加载控制器:Ci
+
+[ 2018-05-14T23:29:53+08:00 ] 127.0.0.1 /zydongci/index.php/home/ci/showlist
+ERR: 无法加载控制器:Ci
+
+[ 2018-05-14T23:54:30+08:00 ] 127.0.0.1 /zydongci/index.php/home/ci/showlist
+ERR: 1146:Table 'verb.wwg_ci' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `wwg_ci`
+
+[ 2018-05-14T23:58:58+08:00 ] 127.0.0.1 /zydongci/index.php/home/ci/showlist
+ERR: 1146:Table 'verb.wwg_ci' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `wwg_ci`
+
+[ 2018-05-14T23:59:05+08:00 ] 127.0.0.1 /zydongci/index.php/home/ci/showlist
+ERR: 1146:Table 'verb.wwg_ci' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `wwg_ci`
+
+[ 2018-05-14T23:59:30+08:00 ] 127.0.0.1 /zydongci/index.php/home/ci/showlist
+ERR: 1146:Table 'verb.wwg_ci' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `wwg_ci`
+
+[ 2018-05-14T23:59:49+08:00 ] 127.0.0.1 /zydongci/index.php/home/ci/showlist
+ERR: 1146:Table 'verb.wwg_ci' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `wwg_ci`
+

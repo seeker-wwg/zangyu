@@ -1,0 +1,201 @@
+/*
+* @Author: Marte
+* @Date:   2018-02-02 21:33:13
+* @Last Modified by:   Marte
+* @Last Modified time: 2018-02-04 00:34:17
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    border:0;
+}
+a{
+	text-decoration: none;
+}
+ol, ul ,li{list-style: none;} 
+/* nav导航部分start */
+.nav{
+	background-color: #353535;
+}
+.nav .w{
+	height: 58px;
+	width: 980px;
+	margin: 0 auto;
+}
+ .logo{
+ 	float: left;
+ }
+ .logo a{
+	display: inline-block;
+	width: 120px;
+	height: 38px;
+	margin: 10px;
+}
+.nav-title{
+	float: left;
+}
+.nav-title li{
+	float: left;
+}
+.nav-title li:first-child{
+	position: relative;
+}
+.nav-title li a{
+	display: inline-block;
+	font-weight: 700;
+	padding: 19px;
+	color: #fff;
+	font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+}
+.nav-title li a:hover{
+	background-color: rgba(0,0,0,0.6);
+}
+.nav-title li:first-child:hover .secul {
+		z-index: 9;
+		display: block;
+}
+.nav-title .secul{
+	height: 128px;
+	position: absolute;
+	bottom: 0;
+	top: 58px;
+	background-color: #353535;
+	display: none;
+}
+.nav-title .secul li:first-child{
+	border-bottom: 1px solid red;
+}
+.nav-title .secul li:last-child{
+	border-top: 1px solid red;
+}
+.nav-title .secul li a{
+	display: block;
+	padding: 6px 20px;
+	width: 120px;
+	height: 20px;
+	font-size: 14px;
+	font-weight: 400;
+}
+/* 登录注册 部分 */
+.log_reg{
+	width: 166px;
+	overflow: hidden;
+	float: right;
+	margin-top: 14px;
+}
+.log_reg a{
+	display: block;
+	width: 54px;
+	height: 34px;
+	text-align: center;
+	background-color: #337ab7;
+	font-size: 14px;
+	line-height: 34px;
+	padding: 0 10px;
+	color: #fff;
+	border-radius: 10px;
+}
+.log_reg a:first-child{
+	float: left;
+}
+.log_reg a:last-child{
+	float: right;
+	background-color: #38b836;
+}
+.log_reg a:first-child:hover{
+	background-color: #134A93;
+}
+.log_reg a:last-child:hover{
+	background-color: #398439;
+}
+/* nav导航部分end */
+/* containner部分start */
+.container{
+	width: 980px;
+	height: 300px;		/*改变内容的高度*/
+					/* background-color: #ccc; */
+	margin: 10px auto;
+	position: relative;
+}
+.container .logo-title{
+	position: absolute;
+	height: 120px;
+	text-align: center;
+	font-weight: 500;
+	line-height: 120px;
+	font-size: 70px;
+	top: 50px;		/*  logo 字体的高度*/
+	left: 50%;
+	color: #fff;
+	transform: translate(-50%,0px);
+	margin: 0;
+	text-shadow: 0 0 16px #1f5449;
+}
+/* 搜索框部分 */
+.input-group{
+	position: absolute;
+	width: 650px;
+	height: 48px;
+				/* background-color: purple; */
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%,0px);
+}
+.input-group input{
+	height: 48px;
+	width: 85%;
+	background-color: #fff;
+	font-size: 18px;
+	padding-left: 16px;
+	box-sizing: border-box;
+	float: left;
+	border-radius: 10px;
+}
+
+.input-group .btn{
+	display: inline-block;
+	height: 48px;
+	width: 15%;
+	color: #fff;
+    background-color: #4D73A0;
+    border-color: #4D73A0;
+    font-size: 18px;
+    line-height: 48px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.input-group .btn:hover{
+	background-color: #666;
+}
+/* 热词部分 */
+.hot_word p{
+	margin-top: 20px;
+					/* background-color: pink; */
+	padding: 0px 500px;
+}
+.hot_word p a{
+	display: inline-block;
+	color: #fff;
+    background-color: #337ab7;
+    font-size: 25px;
+    padding: 6px 10px;
+	margin: 0px 10px;
+	font-family: Microsoft Himalaya;
+}
+.hot_word p a:hover{
+	background-color: #3B5779;
+}
+/* 版权 */
+.copyright{
+	height: 22px;
+}
+.copyright p{
+	font-size: 12px;
+    text-align: center;
+    color: #4a4a4a;
+    line-height: 22;
+    text-align: center;
+}
